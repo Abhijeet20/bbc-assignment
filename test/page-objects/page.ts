@@ -1,10 +1,9 @@
-import chai from "chai";
-
 export default class Page {
   constructor() {}
   /*All reusable web functions*/
   async navigateTo(path: string): Promise<void> {
     await browser.url(path);
+    await browser.maximizeWindow();
   }
 
   async click(ele: WebdriverIO.Element) {

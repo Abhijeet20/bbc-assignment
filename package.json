@@ -3,6 +3,7 @@
   "type": "module",
   "devDependencies": {
     "@types/chai": "^4.3.4",
+    "@wdio/allure-reporter": "^8.3.5",
     "@wdio/cli": "^8.3.5",
     "@wdio/cucumber-framework": "^8.3.0",
     "@wdio/local-runner": "^8.3.5",
@@ -12,7 +13,8 @@
     "dotenv": "^16.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5",
-    "wdio-chromedriver-service": "^8.0.1"
+    "wdio-chromedriver-service": "^8.0.1",
+    "winston": "^3.8.2"
   },
   "scripts": {
     "automated": "npx wdio wdio.conf.ts --cucumberOpts.tagExpressions='@automated'"
